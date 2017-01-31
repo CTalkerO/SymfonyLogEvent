@@ -1,7 +1,8 @@
 # SymfonyLogEvent
 Symfony Log Events by LifeCycle
 
-This Symfony Log is code based on the knpLabs <a href="https://github.com/KnpLabs/DoctrineBehaviors">DoctrineBehaviors</a>.
+1. This Symfony Log is code based on the knpLabs <a href="https://github.com/KnpLabs/DoctrineBehaviors">DoctrineBehaviors</a>.
+2. This Symfony Log is auto log times, timestampable, use <a href="http://symfony.com/doc/current/doctrine/common_extensions.html">Gedmo</a>. You can change it into manual.
 
 ###Support many-to-many fileds change detection###
 ###All registered CRUD logs###
