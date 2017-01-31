@@ -4,7 +4,7 @@ SymfonyLogEvents is a Central Management entity CURD loggable tool. No Taint, no
 1. This Symfony LogEvent, the code reference the knpLab's <a href="https://github.com/KnpLabs/DoctrineBehaviors">DoctrineBehaviors</a>.
 2. This Symfony LogEvent auto logs times, timestampable, use <a href="http://symfony.com/doc/current/doctrine/common_extensions.html">Gedmo</a>. You can change it into manual.
 
-How to use:
+###How to use:###
 
 1. Change OpLog.orm.yml, add your own entity fields.
 
