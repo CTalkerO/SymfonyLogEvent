@@ -1,7 +1,7 @@
 # SymfonyLogEvent
 Symfony Log Events by  LifeCycle
 
-How to use:
+How to use:<br>
 1. php app/console generate:doctrine:entity --entity=YourBundle:OpLog
 
 2. add a event services:
@@ -28,4 +28,5 @@ How to use:
 
                     ];
 ```
+
 4. Finish and enjoy it.
