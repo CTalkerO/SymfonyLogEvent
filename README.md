@@ -14,7 +14,7 @@ How to use:
 2. Run doctrine command: 
 	```$ php app/console generate:doctrine:entity --entity=YourBundle:OpLog```
 
-3. add a event services:
+3. Add a event services:
 	```
 	app.doctrine_brochure_listener:
 		class: Ace\YourBundle\EventListener\LogEventListener<br>
