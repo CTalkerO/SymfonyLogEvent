@@ -19,7 +19,12 @@ How to use:
 
 3. Modify LogEventListener.php, add your own fileds and logic,
 
-	a. Modify $this->entityCollection, add your own class<br>
+	a. Modify $this->entityCollection, add your own class:
+	```
+		$this->entityCollection = array(
+		    //YourBundle::class
+		);
+	```
 	b. Modify OperationLogging mothed add your old entity fileds:<br>
 	```
 			    $array = [
