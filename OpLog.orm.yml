@@ -1,0 +1,28 @@
+Ace\YourBundle\Entity\OpLog:
+  type: entity
+  table: app_oplog
+  id:
+    id:
+      type: integer
+      generator:
+        strategy: AUTO
+  fields:
+    event:
+      type: text
+      nullable: false
+    ip:
+      type: string
+      nullable: true
+    element:
+      type: string
+      nullable: true
+    operatedBy:
+      type: string
+      gedmo:
+        blameable:
+          on: create
+    operatedAt:
+      type: datetime
+      gedmo:
+        timestampable:
+          on: create
