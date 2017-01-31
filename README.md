@@ -1,11 +1,8 @@
 # SymfonyLogEvent
-Symfony Log Events by LifeCycle
+SymfonyLogEvents is a Central Management entity CURD loggable tool. No Taint, no entity code injection, no any dependency injection and it support many-to-many loggable. It can log all registered entity's CURD logs use doctrine LifeCycle Events. 
 
 1. This Symfony LogEvent, the code is referenced by the knpLabs <a href="https://github.com/KnpLabs/DoctrineBehaviors">DoctrineBehaviors</a>.
 2. This Symfony LogEvent auto logs times, timestampable, use <a href="http://symfony.com/doc/current/doctrine/common_extensions.html">Gedmo</a>. You can change it into manual.
-
-###Support many-to-many fileds change detection###
-###All registered CRUD logs###
 
 How to use:
 
