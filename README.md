@@ -1,11 +1,13 @@
 # SymfonyLogEvent
 Symfony Log Events by  LifeCycle
 
-How to use:<br>
+How to use:
+
 1. php app/console generate:doctrine:entity --entity=YourBundle:OpLog
 
 2. add a event services:
-    ```app.doctrine_brochure_listener:
+```
+app.doctrine_brochure_listener:
         class: Ace\YourBundle\EventListener\LogEventListener<br>
         arguments: ['@service_container' , '@security.token_storage' , '@service_container' ]
 
