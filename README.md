@@ -1,7 +1,10 @@
 # SymfonyLogEvent
 Symfony Log Events by LifeCycle
 
-This Symfony Log is code based on the knpLabs [DoctrineBehaviors](#https://github.com/KnpLabs/DoctrineBehaviors)
+This Symfony Log is code based on the knpLabs <a href="https://github.com/KnpLabs/DoctrineBehaviors">DoctrineBehaviors</a>.
+
+###Support many-to-many fileds change detection###
+###All registered CRUD logs###
 
 How to use:
 
