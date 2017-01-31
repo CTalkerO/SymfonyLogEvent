@@ -23,11 +23,11 @@ How to use:
 	b. Modify OperationLogging mothed add your old entity fileds:<br>
 	```
 			    $array = [
-				"event" => $event ,
-				"ip" => $ip,
-				"operatedBy" => $OperatedBy,
-				"operatedAt" => $date,
-				"element" => $element ,
+					"event" => $event ,
+					"ip" => $ip,
+					"operatedBy" => $OperatedBy,
+					"operatedAt" => $date,
+					"element" => $element ,
 
 			    ];
 	```
