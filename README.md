@@ -14,7 +14,7 @@ SymfonyLogEvents is a Central Management entity CURD loggable tool. No Taint, no
 3. Add a event services:
 	```
 	app.doctrine_brochure_listener:
-		class: Ace\YourBundle\EventListener\LogEventListener<br>
+		class: Ace\YourBundle\EventListener\LogEventListener
 		arguments: ['@service_container' , '@security.token_storage' , '@service_container' ]
 
 		tags:
