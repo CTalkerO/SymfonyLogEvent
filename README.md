@@ -36,14 +36,14 @@ How to use:
 	```
 	b. Modify OperationLogging mothed add your own entity fileds in LogEventListener.php :<br>
 	```
-			    $array = [
-					"event" => $event ,
-					"ip" => $ip,
-					"operatedBy" => $OperatedBy,
-					"operatedAt" => $date,
-					"element" => $element ,
+	    $array = [
+			"event" => $event ,
+			"ip" => $ip,
+			"operatedBy" => $OperatedBy,
+			"operatedAt" => $date,
+			"element" => $element ,
 
-			    ];
+	    ];
 	```
 
 5. Finish and enjoy it.
