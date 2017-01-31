@@ -4,19 +4,21 @@ Symfony Log Events by  LifeCycle
 How to use:
 1. php app/console generate:doctrine:entity --entity=YourBundle:OpLog
 
-2. add a event services:<br>
-    app.doctrine_brochure_listener:<br>
+2. add a event services:
+    ```app.doctrine_brochure_listener:
         class: Ace\YourBundle\EventListener\LogEventListener<br>
         arguments: ['@service_container' , '@security.token_storage' , '@service_container' ]
-        tags:<br>
-            - { name: doctrine.event_listener, event: postUpdate }<br>
-            - { name: doctrine.event_listener, event: postPersist }<br>
-            - { name: doctrine.event_listener, event: preRemove }<br>
 
-3. Modify LogEventListener.php, add your own fileds and logic,<br>
+	tags:
+            - { name: doctrine.event_listener, event: postUpdate }
+            - { name: doctrine.event_listener, event: postPersist }
+            - { name: doctrine.event_listener, event: preRemove }
+```
+3. Modify LogEventListener.php, add your own fileds and logic,
 
-	a. Modify $this->entityCollection, add your own class
-	b. Modify OperationLogging mothed add your old entity fileds:
+	a. Modify $this->entityCollection, add your own class<br>
+	b. Modify OperationLogging mothed add your old entity fileds:<br>
+```
                     $array = [
                         "event" => $event ,
                         "ip" => $ip,
@@ -25,4 +27,5 @@ How to use:
                         "element" => $element ,
 
                     ];
+```
 4. Finish and enjoy it.
