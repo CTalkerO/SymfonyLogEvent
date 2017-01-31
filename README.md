@@ -1,11 +1,16 @@
 # SymfonyLogEvent
-Symfony Log Events by  LifeCycle
+Symfony Log Events by LifeCycle
+
+This Symfony Log is code based on the knpLabs [DoctrineBehaviors](#https://github.com/KnpLabs/DoctrineBehaviors)
 
 How to use:
 
-1. php app/console generate:doctrine:entity --entity=YourBundle:OpLog
+1. Change OpLog.orm.yml, add your own fileds
 
-2. add a event services:
+2. Run doctrine command: 
+	```php app/console generate:doctrine:entity --entity=YourBundle:OpLog```
+
+3. add a event services:
 	```
 	app.doctrine_brochure_listener:
 		class: Ace\YourBundle\EventListener\LogEventListener<br>
@@ -17,7 +22,7 @@ How to use:
 		    - { name: doctrine.event_listener, event: preRemove }
 	```
 
-3. Modify LogEventListener.php, add your own fileds and logic,
+4. Modify LogEventListener.php, add your own fileds and logic,
 
 	a. Modify $this->entityCollection, add your own class:
 	```
@@ -25,7 +30,7 @@ How to use:
 		    //YourBundle::class
 		);
 	```
-	b. Modify OperationLogging mothed add your old entity fileds:<br>
+	b. Modify OperationLogging mothed add your own entity fileds:<br>
 	```
 			    $array = [
 					"event" => $event ,
@@ -37,4 +42,4 @@ How to use:
 			    ];
 	```
 
-4. Finish and enjoy it.
+5. Finish and enjoy it.
